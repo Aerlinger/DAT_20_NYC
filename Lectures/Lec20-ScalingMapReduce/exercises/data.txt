@@ -1,0 +1,5 @@
+The three tasks are technically synchronous. This means that the computers will not start reducing until all mappers have completed their jobs. It's important for the processor or system in place to do its best to split the data processing evenly: if you have one mapper doing all the work, there is no advantage!
+Tasks also also (typically) solved linearly. That is, we want to limit the number of passes through the data. So , consider how we could solve each of these reducer tasks:
+count: We've solved this already! Take the previous count and add to it. mapreduce will want to presort keys so it is not searching for keys on the fly. What is something that could be solved similar to count?
+max or min: How would we solve these?
+Where would machine learning make sense in map reduce? Where would it not?

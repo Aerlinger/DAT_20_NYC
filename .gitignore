@@ -1,0 +1,10 @@
+.DS_Store
+*/.DS_Store
+drafts
+
+# Class recordings will bloat the git repo
+*.mov
+*.mpeg
+*.avi
+
+scratch*

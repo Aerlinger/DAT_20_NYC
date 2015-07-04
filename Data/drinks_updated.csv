@@ -1,0 +1,194 @@
+country,beer_servings,spirit_servings,wine_servings,total_litres_of_pure_alcohol,continent
+Afghanistan,0.0,0.0,0.0,0.0,AS
+Albania,89.0,132.0,54.0,4.9,EU
+Algeria,25.0,0.0,14.0,0.7,AF
+Andorra,245.0,138.0,312.0,12.4,EU
+Angola,217.0,57.0,45.0,5.9,AF
+Antigua & Barbuda,102.0,128.0,45.0,4.9,NA
+Argentina,193.0,25.0,221.0,8.3,SA
+Armenia,21.0,179.0,11.0,3.8,EU
+Australia,261.0,72.0,212.0,10.4,OC
+Austria,279.0,75.0,191.0,9.7,EU
+Azerbaijan,21.0,46.0,5.0,1.3,EU
+Bahamas,122.0,176.0,51.0,6.3,NA
+Bahrain,42.0,63.0,7.0,2.0,AS
+Bangladesh,0.0,0.0,0.0,0.0,AS
+Barbados,143.0,173.0,36.0,6.3,NA
+Belarus,142.0,373.0,42.0,14.4,EU
+Belgium,295.0,84.0,212.0,10.5,EU
+Belize,263.0,114.0,8.0,6.8,NA
+Benin,34.0,4.0,13.0,1.1,AF
+Bhutan,23.0,0.0,0.0,0.4,AS
+Bolivia,167.0,41.0,8.0,3.8,SA
+Bosnia-Herzegovina,76.0,173.0,8.0,4.6,EU
+Botswana,173.0,35.0,35.0,5.4,AF
+Brazil,245.0,145.0,16.0,7.2,SA
+Brunei,31.0,2.0,1.0,0.6,AS
+Bulgaria,231.0,252.0,94.0,10.3,EU
+Burkina Faso,25.0,7.0,7.0,4.3,AF
+Burundi,88.0,0.0,0.0,6.3,AF
+Cote d'Ivoire,37.0,1.0,7.0,4.0,AF
+Cabo Verde,144.0,56.0,16.0,4.0,AF
+Cambodia,57.0,65.0,1.0,2.2,AS
+Cameroon,147.0,1.0,4.0,5.8,AF
+Canada,240.0,122.0,100.0,8.2,NA
+Central African Republic,17.0,2.0,1.0,1.8,AF
+Chad,15.0,1.0,1.0,0.4,AF
+Chile,130.0,124.0,172.0,7.6,SA
+China,79.0,192.0,8.0,5.0,AS
+Colombia,159.0,76.0,3.0,4.2,SA
+Comoros,1.0,3.0,1.0,0.1,AF
+Congo,76.0,1.0,9.0,1.7,AF
+Cook Islands,0.0,254.0,74.0,5.9,OC
+Costa Rica,149.0,87.0,11.0,4.4,NA
+Croatia,230.0,87.0,254.0,10.2,EU
+Cuba,93.0,137.0,5.0,4.2,NA
+Cyprus,192.0,154.0,113.0,8.2,EU
+Czech Republic,361.0,170.0,134.0,11.8,EU
+North Korea,0.0,0.0,0.0,0.0,AS
+DR Congo,32.0,3.0,1.0,2.3,AF
+Denmark,224.0,81.0,278.0,10.4,EU
+Djibouti,15.0,44.0,3.0,1.1,AF
+Dominica,52.0,286.0,26.0,6.6,NA
+Dominican Republic,193.0,147.0,9.0,6.2,NA
+Ecuador,162.0,74.0,3.0,4.2,SA
+Egypt,6.0,4.0,1.0,0.2,AF
+El Salvador,52.0,69.0,2.0,2.2,NA
+Equatorial Guinea,92.0,0.0,233.0,5.8,AF
+Eritrea,18.0,0.0,0.0,0.5,AF
+Estonia,224.0,194.0,59.0,9.5,EU
+Ethiopia,20.0,3.0,0.0,0.7,AF
+Fiji,77.0,35.0,1.0,2.0,OC
+Finland,263.0,133.0,97.0,10.0,EU
+France,127.0,151.0,370.0,11.8,EU
+Gabon,347.0,98.0,59.0,8.9,AF
+Gambia,8.0,0.0,1.0,2.4,AF
+Georgia,52.0,100.0,149.0,5.4,EU
+Germany,346.0,117.0,175.0,11.3,EU
+Ghana,31.0,3.0,10.0,1.8,AF
+Greece,133.0,112.0,218.0,8.3,EU
+Grenada,199.0,438.0,28.0,11.9,NA
+Guatemala,53.0,69.0,2.0,2.2,NA
+Guinea,9.0,0.0,2.0,0.2,AF
+Guinea-Bissau,28.0,31.0,21.0,2.5,AF
+Guyana,93.0,302.0,1.0,7.1,SA
+Haiti,1.0,326.0,1.0,5.9,NA
+Honduras,69.0,98.0,2.0,3.0,NA
+Hungary,234.0,215.0,185.0,11.3,EU
+Iceland,233.0,61.0,78.0,6.6,EU
+India,9.0,114.0,0.0,2.2,AS
+Indonesia,5.0,1.0,0.0,0.1,AS
+Iran,0.0,0.0,0.0,0.0,AS
+Iraq,9.0,3.0,0.0,0.2,AS
+Ireland,313.0,118.0,165.0,11.4,EU
+Israel,63.0,69.0,9.0,2.5,AS
+Italy,85.0,42.0,237.0,6.5,EU
+Jamaica,82.0,97.0,9.0,3.4,NA
+Japan,77.0,202.0,16.0,7.0,AS
+Jordan,6.0,21.0,1.0,0.5,AS
+Kazakhstan,124.0,246.0,12.0,6.8,AS
+Kenya,58.0,22.0,2.0,1.8,AF
+Kiribati,21.0,34.0,1.0,1.0,OC
+Kuwait,0.0,0.0,0.0,0.0,AS
+Kyrgyzstan,31.0,97.0,6.0,2.4,AS
+Laos,62.0,0.0,123.0,6.2,AS
+Latvia,281.0,216.0,62.0,10.5,EU
+Lebanon,20.0,55.0,31.0,1.9,AS
+Lesotho,82.0,29.0,0.0,2.8,AF
+Liberia,19.0,152.0,2.0,3.1,AF
+Libya,0.0,0.0,0.0,0.0,AF
+Lithuania,343.0,244.0,56.0,12.9,EU
+Luxembourg,236.0,133.0,271.0,11.4,EU
+Madagascar,26.0,15.0,4.0,0.8,AF
+Malawi,8.0,11.0,1.0,1.5,AF
+Malaysia,13.0,4.0,0.0,0.3,AS
+Maldives,0.0,0.0,0.0,0.0,AS
+Mali,5.0,1.0,1.0,0.6,AF
+Malta,149.0,100.0,120.0,6.6,EU
+Marshall Islands,0.0,0.0,0.0,0.0,OC
+Mauritania,0.0,0.0,0.0,0.0,AF
+Mauritius,98.0,31.0,18.0,2.6,AF
+Mexico,238.0,68.0,5.0,5.5,NA
+Micronesia,62.0,50.0,18.0,2.3,OC
+Monaco,0.0,0.0,0.0,0.0,EU
+Mongolia,77.0,189.0,8.0,4.9,AS
+Montenegro,31.0,114.0,128.0,4.9,EU
+Morocco,12.0,6.0,10.0,0.5,AF
+Mozambique,47.0,18.0,5.0,1.3,AF
+Myanmar,5.0,1.0,0.0,0.1,AS
+Namibia,376.0,3.0,1.0,6.8,AF
+Nauru,49.0,0.0,8.0,1.0,OC
+Nepal,5.0,6.0,0.0,0.2,AS
+Netherlands,251.0,88.0,190.0,9.4,EU
+New Zealand,203.0,79.0,175.0,9.3,OC
+Nicaragua,78.0,118.0,1.0,3.5,NA
+Niger,3.0,2.0,1.0,0.1,AF
+Nigeria,42.0,5.0,2.0,9.1,AF
+Niue,188.0,200.0,7.0,7.0,OC
+Norway,169.0,71.0,129.0,6.7,EU
+Oman,22.0,16.0,1.0,0.7,AS
+Pakistan,0.0,0.0,0.0,0.0,AS
+Palau,306.0,63.0,23.0,6.9,OC
+Panama,285.0,104.0,18.0,7.2,NA
+Papua New Guinea,44.0,39.0,1.0,1.5,OC
+Paraguay,213.0,117.0,74.0,7.3,SA
+Peru,163.0,160.0,21.0,6.1,SA
+Philippines,71.0,186.0,1.0,4.6,AS
+Poland,343.0,215.0,56.0,10.9,EU
+Portugal,194.0,67.0,339.0,11.0,EU
+Qatar,1.0,42.0,7.0,0.9,AS
+South Korea,140.0,16.0,9.0,9.8,AS
+Moldova,109.0,226.0,18.0,6.3,EU
+Romania,297.0,122.0,167.0,10.4,EU
+Russian Federation,247.0,326.0,73.0,11.5,AS
+Rwanda,43.0,2.0,0.0,6.8,AF
+St. Kitts & Nevis,194.0,205.0,32.0,7.7,NA
+St. Lucia,171.0,315.0,71.0,10.1,NA
+St. Vincent & the Grenadines,120.0,221.0,11.0,6.3,NA
+Samoa,105.0,18.0,24.0,2.6,OC
+San Marino,0.0,0.0,0.0,0.0,EU
+Sao Tome & Principe,56.0,38.0,140.0,4.2,AF
+Saudi Arabia,0.0,5.0,0.0,0.1,AS
+Senegal,9.0,1.0,7.0,0.3,AF
+Serbia,283.0,131.0,127.0,9.6,EU
+Seychelles,157.0,25.0,51.0,4.1,AF
+Sierra Leone,25.0,3.0,2.0,6.7,AF
+Singapore,60.0,12.0,11.0,1.5,AS
+Slovakia,196.0,293.0,116.0,11.4,EU
+Slovenia,270.0,51.0,276.0,10.6,EU
+Solomon Islands,56.0,11.0,1.0,1.2,OC
+Somalia,0.0,0.0,0.0,0.0,AF
+South Africa,225.0,76.0,81.0,8.2,AF
+Spain,284.0,157.0,112.0,10.0,EU
+Sri Lanka,16.0,104.0,0.0,2.2,AS
+Sudan,8.0,13.0,0.0,1.7,AF
+Suriname,128.0,178.0,7.0,5.6,SA
+Swaziland,90.0,2.0,2.0,4.7,AF
+Sweden,152.0,60.0,186.0,7.2,EU
+Switzerland,185.0,100.0,280.0,10.2,EU
+Syria,5.0,35.0,16.0,1.0,AS
+Tajikistan,2.0,15.0,0.0,0.3,AS
+Thailand,99.0,258.0,1.0,6.4,AS
+Macedonia,106.0,27.0,86.0,3.9,EU
+Timor-Leste,1.0,1.0,4.0,0.1,AS
+Togo,36.0,2.0,19.0,1.3,AF
+Tonga,36.0,21.0,5.0,1.1,OC
+Trinidad & Tobago,197.0,156.0,7.0,6.4,NA
+Tunisia,51.0,3.0,20.0,1.3,AF
+Turkey,51.0,22.0,7.0,1.4,AS
+Turkmenistan,19.0,71.0,32.0,2.2,AS
+Tuvalu,6.0,41.0,9.0,1.0,OC
+Uganda,45.0,9.0,0.0,8.3,AF
+Ukraine,206.0,237.0,45.0,8.9,EU
+United Arab Emirates,16.0,135.0,5.0,2.8,AS
+United Kingdom,219.0,126.0,195.0,10.4,EU
+Tanzania,36.0,6.0,1.0,5.7,AF
+USA,249.0,158.0,84.0,8.7,NA
+Uruguay,115.0,35.0,220.0,6.6,SA
+Uzbekistan,25.0,101.0,8.0,2.4,AS
+Vanuatu,21.0,18.0,11.0,0.9,OC
+Venezuela,333.0,100.0,3.0,7.7,SA
+Vietnam,111.0,2.0,1.0,2.0,AS
+Yemen,6.0,0.0,0.0,0.1,AS
+Zambia,32.0,19.0,4.0,2.5,AF
+Zimbabwe,64.0,18.0,4.0,4.7,AF

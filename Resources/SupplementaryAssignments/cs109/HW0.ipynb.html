@@ -1,0 +1,1357 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!--NEW RELIC Start Perf Measurement-->
+  
+  <!--NREND-->
+
+  <!-- Le styles -->
+  <link href="/static/build/styles.css" rel="stylesheet">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Le fav and touch icons -->
+  <link rel="shortcut icon" href="/static/ico/ipynb_icon_16x16.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" 
+        href="/static/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" 
+        href="/static/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" 
+        href="/static/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" 
+        href="/static/ico/apple-touch-icon-57-precomposed.png">
+  
+  
+
+  
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Notebook on nbviewer">
+  <meta name="twitter:description" content="Check out this Jupyter notebook!">
+
+  
+  <meta name="twitter:domain" content="nbviewer.ipython.org">
+  <meta name="twitter:image:src" content="http://ipython.org/ipython-doc/dev/_images/ipynb_icon_128x128.png">
+
+  <link href="/static/build/notebook.css" rel="stylesheet">
+  
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    init_mathjax = function() {
+      if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+          },
+          displayAlign: 'center',
+          "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+          }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+      }
+    }
+    init_mathjax();
+  </script>
+
+</head>
+
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+  <!-- These are loaded at the top of the body so they are available to 
+       notebook cells when they are loaded below. -->
+  <script src="/static/components/jquery/dist/jquery.min.js"></script>
+  <script src="/static/components/requirejs/require.js"></script>
+  <script src="/static/components/moment/min/moment.min.js"></script>
+
+<!-- Navbar
+================================================== -->
+  <nav id="menubar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="/">nbviewer</a>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+    <a href="/faq" title="FAQ" >
+      
+        <span>FAQ</span>
+      
+    </a>
+  </li>
+          <li class="">
+            <a href="http://ipython.org">IPython</a>
+          </li>
+          <li class="">
+            <a href="http://jupyter.org">Jupyter</a>
+          </li>
+        </ul>
+        
+        <ul class="nav navbar-nav navbar-right">
+          
+
+          
+  
+
+  
+    <li>
+    <a href="https://github.com/cs109/2014/blob/master/homework/HW0.ipynb" title="Notebook Home" >
+      <span class="fa fa-github fa-2x menu-icon"></span>
+      <span class="menu-text">Notebook Home</span>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a href="https://raw.githubusercontent.com/cs109/2014/master/homework/HW0.ipynb" title="Download Notebook" download>
+      <span class="fa fa-download fa-2x menu-icon"></span>
+      <span class="menu-text">Download Notebook</span>
+    </a>
+  </li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+    
+  
+  <ol class="breadcrumb">
+    
+      <li>
+        <a href="/github/cs109/2014/tree/master">2014</a>
+      </li>
+    
+      <li>
+        <a href="/github/cs109/2014/tree/master/homework">homework</a>
+      </li>
+    
+  </ol>
+  
+  <div id="notebook">
+    <div id="notebook-container">
+      
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Homework-0">Homework 0<a class="anchor-link" href="#Homework-0">&#182;</a></h1><h3 id="Due-Tuesday,-September-9,-2014-(but-no-submission-is-required)">Due Tuesday, September 9, 2014 (but no submission is required)<a class="anchor-link" href="#Due-Tuesday,-September-9,-2014-(but-no-submission-is-required)">&#182;</a></h3><hr>
+<p>Welcome to CS109 / STAT121 / AC209 / E-109 (<a href="http://cs109.github.io/2014/">http://cs109.github.io/2014/</a>).  In this class, we will be using a variety of tools that will require some initial configuration. To ensure everything goes smoothly moving forward, we will setup the majority of those tools in this homework. While some of this will likely be dull, doing it now will enable us to do more exciting work in the weeks that follow without getting bogged down in further software configuration. This homework will not be graded, however it is essential that you complete it timely since it will enable us to set up your accounts. You do not have to hand anything in, with the exception of filling out the online survey.</p>
+<h2 id="Class-Survey,-Piazza,-and-Introduction">Class Survey, Piazza, and Introduction<a class="anchor-link" href="#Class-Survey,-Piazza,-and-Introduction">&#182;</a></h2><p><strong>Class Survey</strong></p>
+<p>Please complete the mandatory course survey located <a href="https://docs.google.com/forms/d/1uAxk4am1HZFh15Y8zdGpBm5hGTTmX3IGkBkD3foTbv0/viewform?usp=send_form">here</a>. It should only take a few moments of your time. Once you fill in the survey we will sign you up to the course forum on Piazza and the dropbox system that you will use to hand in the homework. It is imperative that you fill out the survey on time as we use the provided information to sign you up for these services.</p>
+<p><strong>Piazza</strong></p>
+<p>Go to <a href="https://piazza.com/harvard/fall2014/cs109">Piazza</a> and sign up for the class using your Harvard e-mail address.</p>
+<p>You will use Piazza as a forum for discussion, to find team members, to arrange appointments, and to ask questions. Piazza should be your primary form of communication with the staff. Use the staff e-mail (staff@cs109.org) only for individual requests, e.g., to excuse yourself from a mandatory guest lecture. All homeworks, and project descriptions will be announced on Piazza first.</p>
+<p><strong>Introduction</strong></p>
+<p>Once you are signed up to the Piazza course forum, introduce yourself to your classmates and course staff with a follow-up post in the introduction thread. Include your name/nickname, your affiliation, why you are taking this course, and tell us something interesting about yourself (e.g., an industry job, an unusual hobby, past travels, or a cool project you did, etc.). Also tell us whether you have experience with data science.</p>
+<h2 id="Programming-expectations">Programming expectations<a class="anchor-link" href="#Programming-expectations">&#182;</a></h2><p>All the assignments and labs for this class will use Python and, for the most part, the browser-based IPython notebook format you are currently viewing. Knowledge of Python is not a prerequisite for this course, <strong>provided you are comfortable learning on your own as needed</strong>. While we have strived to make the programming component of this course straightforward, we will not devote much time to teaching prorgramming or Python syntax. Basically, you should feel comfortable with:</p>
+<ul>
+<li>How to look up Python syntax on Google and StackOverflow.</li>
+<li>Basic programming concepts like functions, loops, arrays, dictionaries, strings, and if statements.</li>
+<li>How to learn new libraries by reading documentation.</li>
+<li>Asking questions on StackOverflow or Piazza.</li>
+</ul>
+<p>There are many online tutorials to introduce you to scientific python programming. <a href="https://github.com/jrjohansson/scientific-python-lectures">Here is one</a> that is very nice. Lectures 1-4 are most relevant to this class.</p>
+<h2 id="Getting-Python">Getting Python<a class="anchor-link" href="#Getting-Python">&#182;</a></h2><p>You will be using Python throughout the course, including many popular 3rd party Python libraries for scientific computing. <a href="http://continuum.io/downloads">Anaconda</a> is an easy-to-install bundle of Python and most of these libraries. We recommend that you use Anaconda for this course.</p>
+<p>Please visit <a href="https://github.com/cs109/content/wiki/Installing-Python">this page</a> and follow the instructions to set up Python.</p>
+<hline>
+
+<h2 id="Hello,-Python">Hello, Python<a class="anchor-link" href="#Hello,-Python">&#182;</a></h2><p>The IPython notebook is an application to build interactive computational notebooks. You'll be using them to complete labs and homework. Once you've set up Python, please download this HW0 ipython notebook and open it with IPython by typing</p>
+
+<pre><code>ipython notebook &lt;name_of_downloaded_file&gt;</code></pre>
+<p>For the rest of the assignment, use your local copy of this page, running on IPython.</p>
+<p>Notebooks are composed of many "cells", which can contain text (like this one), or code (like the one below). Double click on the cell below, and evaluate it by clicking the "play" button above, or by hitting shift + enter</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="s">&quot;Item is &quot;</span><span class="p">,</span> <span class="n">item</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Item is  10
+Item is  20
+Item is  30
+Item is  40
+Item is  50
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Python-Libraries">Python Libraries<a class="anchor-link" href="#Python-Libraries">&#182;</a></h2><p>We will be using a several different libraries throughout this course. If you've successfully completed the <a href="https://github.com/cs109/content/wiki/Installing-Python">installation instructions</a>, all of the following statements should run.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c">#IPython is what you are using now to run the notebook</span>
+<span class="kn">import</span> <span class="nn">IPython</span>
+<span class="nb">print</span> <span class="s">&quot;IPython version:      %6.6s (need at least 1.0)&quot;</span> <span class="o">%</span> <span class="n">IPython</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c"># Numpy is a library for working with Arrays</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="nb">print</span> <span class="s">&quot;Numpy version:        %6.6s (need at least 1.7.1)&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c"># SciPy implements many different numerical algorithms</span>
+<span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="nb">print</span> <span class="s">&quot;SciPy version:        %6.6s (need at least 0.12.0)&quot;</span> <span class="o">%</span> <span class="n">sp</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c"># Pandas makes working with data tables easier</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="nb">print</span> <span class="s">&quot;Pandas version:       %6.6s (need at least 0.11.0)&quot;</span> <span class="o">%</span> <span class="n">pd</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c"># Module for plotting</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="nb">print</span> <span class="s">&quot;Mapltolib version:    %6.6s (need at least 1.2.1)&quot;</span> <span class="o">%</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c"># SciKit Learn implements several Machine Learning algorithms</span>
+<span class="kn">import</span> <span class="nn">sklearn</span>
+<span class="nb">print</span> <span class="s">&quot;Scikit-Learn version: %6.6s (need at least 0.13.1)&quot;</span> <span class="o">%</span> <span class="n">sklearn</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c"># Requests is a library for getting data from the Web</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="nb">print</span> <span class="s">&quot;requests version:     %6.6s (need at least 1.2.3)&quot;</span> <span class="o">%</span> <span class="n">requests</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c"># Networkx is a library for working with networks</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="nb">print</span> <span class="s">&quot;NetworkX version:     %6.6s (need at least 1.7)&quot;</span> <span class="o">%</span> <span class="n">nx</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c">#BeautifulSoup is a library to parse HTML and XML documents</span>
+<span class="kn">import</span> <span class="nn">bs4</span>
+<span class="nb">print</span> <span class="s">&quot;BeautifulSoup version:%6.6s (need at least 4.0)&quot;</span> <span class="o">%</span> <span class="n">bs4</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c">#MrJob is a library to run map reduce jobs on Amazon&#39;s computers</span>
+<span class="kn">import</span> <span class="nn">mrjob</span>
+<span class="nb">print</span> <span class="s">&quot;Mr Job version:       %6.6s (need at least 0.4)&quot;</span> <span class="o">%</span> <span class="n">mrjob</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c">#Pattern has lots of tools for working with data from the internet</span>
+<span class="kn">import</span> <span class="nn">pattern</span>
+<span class="nb">print</span> <span class="s">&quot;Pattern version:      %6.6s (need at least 2.6)&quot;</span> <span class="o">%</span> <span class="n">pattern</span><span class="o">.</span><span class="n">__version__</span>
+
+<span class="c">#Seaborn is a nice library for visualizations</span>
+<span class="kn">import</span> <span class="nn">seaborn</span>
+<span class="nb">print</span> <span class="s">&quot;Seaborn version:      %6.6s (need at least 0.3.1)&quot;</span> <span class="o">%</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">__version__</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>IPython version:       2.1.0 (need at least 1.0)
+Numpy version:         1.8.1 (need at least 1.7.1)
+SciPy version:        0.14.0 (need at least 0.12.0)
+Pandas version:       0.14.0 (need at least 0.11.0)
+Mapltolib version:     1.3.1 (need at least 1.2.1)
+Scikit-Learn version: 0.14.1 (need at least 0.13.1)
+requests version:      2.3.0 (need at least 1.2.3)
+NetworkX version:      1.8.1 (need at least 1.7)
+BeautifulSoup version: 4.3.1 (need at least 3.2)
+Mr Job version:        0.4.2 (need at least 0.4)
+Pattern version:         2.6 (need at least 2.6)
+Seaborn version:       0.3.1 (need at least 0.3.1)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If any of these libraries are missing or out of date, you will need to <a href="https://github.com/cs109/content/wiki/Installing-Python#installing-additional-libraries">install them</a> and restart IPython</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hello-matplotlib">Hello matplotlib<a class="anchor-link" href="#Hello-matplotlib">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The notebook integrates nicely with Matplotlib, the primary plotting package for python. This should embed a figure of a sine wave:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c">#this line prepares IPython for working with matplotlib</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline  
+
+<span class="c"># this actually imports matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>  
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>  <span class="c">#array of 30 points from 0 to 10</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span> <span class="o">*</span> <span class="o">.</span><span class="mi">2</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">&#39;ro-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;A sine wave&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="s">&#39;b-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;Noisy sine&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span> <span class="o">=</span> <span class="s">&#39;lower right&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">&quot;X axis&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;Y axis&quot;</span><span class="p">)</span>           
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.text.Text at 0xc17c8d0&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+QmCC
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If that last cell complained about the <code>%matplotlib</code> line, you need to update IPython to v1.0, and restart the notebook. See the <a href="https://github.com/cs109/content/wiki/Installing-Python">installation page</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hello-Numpy">Hello Numpy<a class="anchor-link" href="#Hello-Numpy">&#182;</a></h2><p>The Numpy array processing library is the basis of nearly all numerical computing in Python. Here's a 30 second crash course. For more details, consult Chapter 4 of Python for Data Analysis, or the <a href="http://docs.scipy.org/doc/numpy-dev/user/index.html">Numpy User's Guide</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span> <span class="s">&quot;Make a 3 row x 4 column array of random numbers&quot;</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="nb">print</span> <span class="n">x</span>
+<span class="nb">print</span>
+
+<span class="nb">print</span> <span class="s">&quot;Add 1 to every element&quot;</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="nb">print</span> <span class="n">x</span>
+<span class="nb">print</span>
+
+<span class="nb">print</span> <span class="s">&quot;Get the element at row 1, column 2&quot;</span>
+<span class="nb">print</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span>
+
+<span class="c"># The colon syntax is called &quot;slicing&quot; the array. </span>
+<span class="nb">print</span> <span class="s">&quot;Get the first row&quot;</span>
+<span class="nb">print</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="nb">print</span>
+
+<span class="nb">print</span> <span class="s">&quot;Get every 2nd column of the first row&quot;</span>
+<span class="nb">print</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Make a 3 row x 4 column array of random numbers
+[[ 0.60055802  0.71333873  0.25148143  0.53201881]
+ [ 0.25098112  0.59223546  0.91753216  0.26645571]
+ [ 0.59649042  0.86196867  0.16560765  0.51400996]]
+
+Add 1 to every element
+[[ 1.60055802  1.71333873  1.25148143  1.53201881]
+ [ 1.25098112  1.59223546  1.91753216  1.26645571]
+ [ 1.59649042  1.86196867  1.16560765  1.51400996]]
+
+Get the element at row 1, column 2
+1.91753215518
+
+Get the first row
+[ 1.60055802  1.71333873  1.25148143  1.53201881]
+
+Get every 2nd column of the first row
+[ 1.60055802  1.25148143]
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Print the maximum, minimum, and mean of the array. This does <strong>not</strong> require writing a loop. In the code cell below, type <code>x.m&lt;TAB&gt;</code>, to find built-in operations for common array statistics like this</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c">#your code here</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Call the <code>x.max</code> function again, but use the <code>axis</code> keyword to print the maximum of each row in x.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c">#your code here</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here's a way to quickly simulate 500 coin "fair" coin tosses (where the probabily of getting Heads is 50%, or 0.5)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">binomial</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span> <span class="s">&quot;number of heads:&quot;</span><span class="p">,</span> <span class="n">x</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Repeat this simulation 500 times, and use the <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist">plt.hist() function</a> to plot a histogram of the number of Heads (1s) in each simulation</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c">#your code here</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-Monty-Hall-Problem">The Monty Hall Problem<a class="anchor-link" href="#The-Monty-Hall-Problem">&#182;</a></h2><p>Here's a fun and perhaps surprising statistical riddle, and a good way to get some practice writing python functions</p>
+<p>In a gameshow, contestants try to guess which of 3 closed doors contain a cash prize (goats are behind the other two doors). Of course, the odds of choosing the correct door are 1 in 3. As a twist, the host of the show occasionally opens a door after a contestant makes his or her choice. This door is always one of the two the contestant did not pick, and is also always one of the goat doors (note that it is always possible to do this, since there are two goat doors). At this point, the contestant has the option of keeping his or her original choice, or swtiching to the other unopened door. The question is: is there any benefit to switching doors? The answer surprises many people who haven't heard the question before.</p>
+<p>We can answer the problem by running simulations in Python. We'll do it in several parts.</p>
+<p>First, write a function called <code>simulate_prizedoor</code>. This function will simulate the location of the prize in many games -- see the detailed specification below:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Function</span>
+<span class="sd">--------</span>
+<span class="sd">simulate_prizedoor</span>
+
+<span class="sd">Generate a random array of 0s, 1s, and 2s, representing</span>
+<span class="sd">hiding a prize between door 0, door 1, and door 2</span>
+
+<span class="sd">Parameters</span>
+<span class="sd">----------</span>
+<span class="sd">nsim : int</span>
+<span class="sd">    The number of simulations to run</span>
+
+<span class="sd">Returns</span>
+<span class="sd">-------</span>
+<span class="sd">sims : array</span>
+<span class="sd">    Random array of 0s, 1s, and 2s</span>
+
+<span class="sd">Example</span>
+<span class="sd">-------</span>
+<span class="sd">&gt;&gt;&gt; print simulate_prizedoor(3)</span>
+<span class="sd">array([0, 0, 2])</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="k">def</span> <span class="nf">simulate_prizedoor</span><span class="p">(</span><span class="n">nsim</span><span class="p">):</span>
+    <span class="c">#compute here</span>
+    <span class="k">return</span> <span class="n">answer</span>
+<span class="c">#your code here</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Next, write a function that simulates the contestant's guesses for <code>nsim</code> simulations. Call this function <code>simulate_guess</code>. The specs:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Function</span>
+<span class="sd">--------</span>
+<span class="sd">simulate_guess</span>
+
+<span class="sd">Return any strategy for guessing which door a prize is behind. This</span>
+<span class="sd">could be a random strategy, one that always guesses 2, whatever.</span>
+
+<span class="sd">Parameters</span>
+<span class="sd">----------</span>
+<span class="sd">nsim : int</span>
+<span class="sd">    The number of simulations to generate guesses for</span>
+
+<span class="sd">Returns</span>
+<span class="sd">-------</span>
+<span class="sd">guesses : array</span>
+<span class="sd">    An array of guesses. Each guess is a 0, 1, or 2</span>
+
+<span class="sd">Example</span>
+<span class="sd">-------</span>
+<span class="sd">&gt;&gt;&gt; print simulate_guess(5)</span>
+<span class="sd">array([0, 0, 0, 0, 0])</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c">#your code here</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Next, write a function, <code>goat_door</code>, to simulate randomly revealing one of the goat doors that a contestant didn't pick.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Function</span>
+<span class="sd">--------</span>
+<span class="sd">goat_door</span>
+
+<span class="sd">Simulate the opening of a &quot;goat door&quot; that doesn&#39;t contain the prize,</span>
+<span class="sd">and is different from the contestants guess</span>
+
+<span class="sd">Parameters</span>
+<span class="sd">----------</span>
+<span class="sd">prizedoors : array</span>
+<span class="sd">    The door that the prize is behind in each simulation</span>
+<span class="sd">guesses : array</span>
+<span class="sd">    THe door that the contestant guessed in each simulation</span>
+
+<span class="sd">Returns</span>
+<span class="sd">-------</span>
+<span class="sd">goats : array</span>
+<span class="sd">    The goat door that is opened for each simulation. Each item is 0, 1, or 2, and is different</span>
+<span class="sd">    from both prizedoors and guesses</span>
+
+<span class="sd">Examples</span>
+<span class="sd">--------</span>
+<span class="sd">&gt;&gt;&gt; print goat_door(np.array([0, 1, 2]), np.array([1, 1, 1]))</span>
+<span class="sd">&gt;&gt;&gt; array([2, 2, 0])</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c">#your code here</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write a function, <code>switch_guess</code>, that represents the strategy of always switching a guess after the goat door is opened.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Function</span>
+<span class="sd">--------</span>
+<span class="sd">switch_guess</span>
+
+<span class="sd">The strategy that always switches a guess after the goat door is opened</span>
+
+<span class="sd">Parameters</span>
+<span class="sd">----------</span>
+<span class="sd">guesses : array</span>
+<span class="sd">     Array of original guesses, for each simulation</span>
+<span class="sd">goatdoors : array</span>
+<span class="sd">     Array of revealed goat doors for each simulation</span>
+
+<span class="sd">Returns</span>
+<span class="sd">-------</span>
+<span class="sd">The new door after switching. Should be different from both guesses and goatdoors</span>
+
+<span class="sd">Examples</span>
+<span class="sd">--------</span>
+<span class="sd">&gt;&gt;&gt; print switch_guess(np.array([0, 1, 2]), np.array([1, 2, 1]))</span>
+<span class="sd">&gt;&gt;&gt; array([2, 0, 0])</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c">#your code here</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Last function: write a <code>win_percentage</code> function that takes an array of <code>guesses</code> and <code>prizedoors</code>, and returns the percent of correct guesses</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Function</span>
+<span class="sd">--------</span>
+<span class="sd">win_percentage</span>
+
+<span class="sd">Calculate the percent of times that a simulation of guesses is correct</span>
+
+<span class="sd">Parameters</span>
+<span class="sd">-----------</span>
+<span class="sd">guesses : array</span>
+<span class="sd">    Guesses for each simulation</span>
+<span class="sd">prizedoors : array</span>
+<span class="sd">    Location of prize for each simulation</span>
+
+<span class="sd">Returns</span>
+<span class="sd">--------</span>
+<span class="sd">percentage : number between 0 and 100</span>
+<span class="sd">    The win percentage</span>
+
+<span class="sd">Examples</span>
+<span class="sd">---------</span>
+<span class="sd">&gt;&gt;&gt; print win_percentage(np.array([0, 1, 2]), np.array([0, 0, 0]))</span>
+<span class="sd">33.333</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c">#your code here</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, put it together. Simulate 10000 games where contestant keeps his original guess, and 10000 games where the contestant switches his door after a  goat door is revealed. Compute the percentage of time the contestant wins under either strategy. Is one strategy better than the other?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="c">#your code here</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Many people find this answer counter-intuitive (famously, PhD mathematicians have incorrectly claimed the result must be wrong. Clearly, none of them knew Python).</p>
+<p>One of the best ways to build intuition about why opening a Goat door affects the odds is to re-run the experiment with 100 doors and one prize. If the game show host opens 98 goat doors after you make your initial selection, would you want to keep your first pick or switch? Can you generalize your simulation code to handle the case of <code>n</code> doors?</p>
+
+</div>
+</div>
+</div>
+    </div>
+  </div>
+
+
+    <div class="back-to-top hidden-print text-center">
+      <a href="#">Back to top</a>
+    </div>
+
+    
+      <footer class="footer hidden-print col-md-12">
+        <div class="col-md-4">
+          <p>
+            This web site does not host notebooks, it only renders notebooks
+            available on other websites.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <p>
+            Delivered by <a href="http://www.fastly.com/">Fastly</a>, 
+            Rendered by <a href="https://developer.rackspace.com/?nbviewer=awesome">Rackspace</a>
+          </p>
+          <p>
+            nbviewer GitHub <a href="https://github.com/jupyter/nbviewer">repository</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          
+  
+            
+              <p>
+                nbviewer version:
+                <a href="https://github.com/jupyter/nbviewer/commit/7f784ce2587724e464fc34545018d2df8ed0573d">
+                  7f784ce
+                </a>
+              </p>
+            
+          
+  
+  <p class="text-muted">
+    IPython version: 3.1.0-dev
+    
+    (<a href="https://github.com/ipython/ipython/commit/3924fe0">
+      3924fe0
+    </a>)
+    
+  </p>
+  
+
+          
+  
+  
+  <p class="text-muted">
+    Rendered
+    <span class='date' data-date='Sat, 14 Mar 2015 23:23:13 UTC' title='Sat, 14 Mar 2015 23:23:13 UTC'>(Sat, 14 Mar 2015 23:23:13 UTC)</span>
+  </p>
+  
+
+        </div>
+      </footer>
+    
+
+  </div><!-- /container -->
+
+  <script src="/static/components/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/static/components/headroom.js/dist/headroom.min.js"></script>
+  <script src="/static/components/headroom.js/dist/jQuery.headroom.min.js"></script>
+
+  
+  
+  <script>
+    $(function(){ $("#menubar").headroom({
+      tolerance: 5,
+      offset: 205,
+      classes: {
+        initial: "animated",
+        pinned: "slideInDown",
+        unpinned: "slideOutUp"
+      }
+    })});
+  </script>
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-38683231-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+      var update_date  = function(){
+          var str = window.moment($('.date').data('date')).fromNow();
+          $('.date').text(str);
+      }
+      setInterval(update_date , 61*1000);
+      $(update_date);
+  </script>
+  <!--NEW RELIC Stop Perf Measurement-->
+  
+  <!--NEW RELIC End-->
+</body>
+</html>
